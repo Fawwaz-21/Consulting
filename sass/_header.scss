@@ -1,0 +1,68 @@
+.header{
+    background-image: url("../images/hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    margin-top: 4rem;
+    @media screen and (max-width:600px) {
+        //background-position: right;
+        height: 75vh;
+      }
+
+    &__container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       flex-wrap: wrap;
+       margin-left: 6rem;
+       padding-top: 17rem;
+
+       @media screen and (max-width:600px) {
+       margin-left: 2rem;
+      }
+       
+
+        &-h3{
+          color: $rose;
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-bottom: 2.2rem;
+          letter-spacing: 5px;
+
+          @media screen and (max-width:600px) {
+                font-size: 1.5rem;
+                //color: $white;
+                letter-spacing: 2px;
+         }
+        }
+
+        &-h1{
+            font-size: 7rem;
+            font-weight: 900;
+            letter-spacing: 5px;
+            margin-bottom: 2.2rem;
+            word-wrap: break-word;
+            white-space: normal;
+            width: 50%;
+
+            @media screen and (max-width:600px){
+                font-size: 2.2rem;
+                //color: $white;
+                width: 90%;
+            }
+        }
+
+        &-p{
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            font-weight: 500;
+            margin-bottom: 2.2rem;
+            @media screen and (max-width:600px) {
+               font-size: 1rem;
+              }
+        }
+
+    }
+
+}

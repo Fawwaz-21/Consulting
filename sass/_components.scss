@@ -1,0 +1,103 @@
+.btnPrimary{
+
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    //margin: 0 15px;
+    perspective: 1000px;
+
+     &__a{
+
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform .25s;
+        color: $white;
+    }
+
+    &__a:before,
+    &__a:after{
+     
+        position: absolute;
+        content: "Our Services";
+        height: 55px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 5px solid #fff;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    &__a:before{
+        color: $white;
+        background: $rose;
+        transform: rotateY(0deg) translateZ(25px);
+      }
+      &__a:after{
+        color: $black;
+        transform: rotateX(90deg) translateZ(25px);
+      }
+      &__a:hover{
+        transform: translateZ(-25px) rotateX(-90deg);
+      }
+}
+
+.btn {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: $black;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: $white;
+    padding: 17px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+    margin-left: 18rem;
+
+    @media screen and (max-width:600px){
+      margin-left: 1.5rem;
+    
+  }
+  }
+  
+  .btn span {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: $rose;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+  .btn2{
+
+    @media screen and (max-width:600px){
+      margin-left: -7rem;
+   }
+  }
+  

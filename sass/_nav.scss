@@ -1,0 +1,45 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width:600px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__logo{
+       width: 150px;
+       margin-top: 5rem;
+
+       @media screen and (max-width:600px) {
+        width: 120px;
+        margin-bottom: -3rem;
+      }
+    }
+
+    &__ul{
+      display: flex;
+      justify-content: flex-end;
+      //margin-right: 5rem;
+      margin-top: 5rem;
+    }
+
+    &__li{
+       list-style-type: none;
+    }
+
+    &__a{
+        text-decoration: none;
+        color: $navy-dark;
+        padding: 2rem;
+        font-size: 1.6rem;
+        @media screen and (max-width:600px) {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+    }
+}
